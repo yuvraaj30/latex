@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\begin{document}
+	\begin{equation}
+	(\Gamma_5\delta^2-2\Gamma_3)\phi\\
+	+\Gamma_6\delta\delta\phi+\Gamma_3\delta
+	=\Gamma_7(1-e^2\delta^2)\phi\\
+	\end{equation}
+	\begin{equation}
+		(\Gamma_5\delta^2-2\Gamma_3)\phi-\Gamma_10\delta+\delta_11\Gamma=(1-e^2\delta^2)\phi\\
+	\end{equation}
+		
+\end{document}
