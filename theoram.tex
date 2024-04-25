@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{amsthm}
+
+% Define theorem environment
+\newtheorem{theorem}{Theorem}
+
+\begin{document}
+
+\begin{theorem}[Pythagoream Theorem]
+    In a right-angled triangle, the square of the length of the hypotenuse ($c$) is equal to the sum of the squares of the lengths of the other two sides ($a$ and $b$).
+    \[ c^2 = a^2 + b^2 \]
+\end{theorem}
+
+\begin{proof}
+    Let $ABC$ be a right-angled triangle with a right angle at $C$. Let $a$, $b$, and $c$ be the lengths of the sides opposite to vertices $A$, $B$, and $C$, respectively.
+
+    Consider the square constructed on each side of the triangle:
+
+    \begin{itemize}
+        \item Square on side $AB$ with area $a^2$,
+        \item Square on side $BC$ with area $b^2$,
+        \item Square on side $AC$ with area $c^2$.
+    \end{itemize}
+
+    Now, we observe that the area of the square on side $AC$ is equal to the sum of the areas of the squares on sides $AB$ and $BC$, since these squares cover the same area as the square on side $AC$.
+
+    Therefore,
+    \[ c^2 = a^2 + b^2 \]
+    This completes the proof.
+\end{proof}
+
+\end{document}

@@ -1,0 +1,110 @@
+\documentclass{beamer}
+\usetheme{Boadilla}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{float}
+
+\begin{document}
+	
+	\title{Understanding Machine Learning Algorithms}
+	\author{Avik Chakraborty}
+	\date{April 2024}
+	
+	
+	\begin{frame}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[scale=0.5]{ml.jpg}
+		\end{figure}
+		\titlepage
+		
+	\end{frame}
+	
+	\begin{frame}{Outline}
+		\tableofcontents
+	\end{frame}
+	
+	\section{Introduction}
+	\begin{frame}{Introduction}
+		Machine learning is a branch of artificial intelligence that enables computers to learn from data without being explicitly programmed. In this presentation, we will delve into various machine learning algorithms, their applications, and mathematical foundations.
+		
+		\begin{description}
+			\item[Supervised Learning]
+			In supervised learning, the algorithm learns from labeled data, with each example consisting of an input-output pair.
+			\begin{enumerate}
+				\item Classification: Predicts a discrete class label.
+				\item Regression: Predicts continuous values.
+			\end{enumerate}
+			\item[Unsupervised Learning] 
+			Unsupervised learning deals with unlabeled data and finds hidden patterns or structures within it.
+			\begin{enumerate}
+				\item Clustering : Groups similar data points together.
+				\item Dimensionality Reduction: Reduces the number of features while preserving essential information.
+			\end{enumerate}
+		\end{description}
+	\end{frame}
+	
+	\section{Common Machine Learning Algorithms}
+	\begin{frame}{Common Machine Learning Algorithms}
+		\begin{description}
+			\item[Linear Regression :] Linear regression models the relationship between independent variables and a dependent variable by fitting a linear equation.
+			\begin{equation} 
+				y = mx+c
+			\end{equation}
+			\item[Decision Trees : ]Decision trees partition the feature space into regions and make predictions based on the majority class within each region.
+			\item[Support Vector Machine(SVM) :] SVM finds the hyperplane that best separates data points belonging to different classes.
+		\end{description}
+	\end{frame}
+	
+	\section{Evaluating Machine Learning Models}
+	\begin{frame}{Evaluating Machine Learning Models}
+		\begin{description}
+			\item[Accuracy :] Accuracy measures the proportion of correctly classified instances out of the total instances.
+			\begin{equation}
+				Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
+			\end{equation}
+			\item[Precision and Recall :] Precision measures the proportion of true positives out of all positive predictions, while recall measures the proportion of true positives out of all actual positives.
+			\begin{equation}
+				\begin{split}
+					Precision = \frac{TP}{TP+FP}\\
+					Recall = \frac{TP}{TP+FN}
+				\end{split}
+			\end{equation}
+			
+		\end{description}
+	\end{frame}
+	
+	\begin{frame}{Confusion Matrix}
+		\section{Confusion matrix}
+		A confusion matrix is a useful tool for visualizing the performance of a classification algorithm.
+		\begin{center}
+			\begin{tabular}{ |c | c | c | }
+				\hline
+				Value & Predicted Negative & Predicted Positive \\      
+				\hline
+				Actual Negative & True Negative & False Positive \\
+				\hline
+				Actual Positive & False Negative & True Positive \\
+				\hline
+			\end{tabular}
+		\end{center}
+	\end{frame}
+	
+	\section{Conclusion}
+	\begin{frame}{Conclusion}
+		Machine learning algorithms are powerful tools for extracting insights and making predictions from data. Understanding their principles and applications is crucial for harnessing their potential in various fields.
+	\end{frame}
+	
+	\begin{frame}{References}
+		\begin{thebibliography}{9}
+			\bibitem{hastie}
+			Hastie, T., Tibshirani, R., \& Friedman, J. (2009). \textit{The Elements of Statistical Learning: Data Mining, Inference, and Prediction.} Springer Science \& Business Media.
+			\bibitem{bishop}
+			Bishop, C. M. (2006). \textit{Pattern Recognition and Machine Learning.} Springer.
+			\bibitem{goodfellow}
+			Goodfellow, I., Bengio, Y., \& Courville, A. (2016). \textit{Deep Learning.} MIT Press.
+		\end{thebibliography}
+	\end{frame}
+	
+\end{document}
